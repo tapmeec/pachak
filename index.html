@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pachak | Enlaces Oficiales</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -36,6 +36,7 @@
             text-align: center;
         }
 
+        /* Foto de perfil / Logo Pachak arriba */
         .profile-container {
             width: 110px;
             height: 110px;
@@ -53,21 +54,13 @@
             object-fit: cover;
         }
 
-        /* Estilo para el logo de Tapme central */
-        .tapme-logo-container {
-            margin: 10px auto 6px auto;
-            display: inline-block;
-            transition: transform 0.2s ease;
-        }
-
-        .tapme-logo-container:hover {
-            transform: scale(1.05);
-        }
-
-        .tapme-logo-container img {
-            width: 160px; /* Tamaño más grande y visible */
-            height: auto;
-            display: block;
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c221e;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
         }
 
         p.subtitle {
@@ -137,22 +130,40 @@
         .btn-link:hover .instagram-color {
             color: #ffffff !important;
         }
+
+        /* Estilo del logo de Tapme grande abajo */
+        .tapme-footer {
+            margin-top: 35px;
+            text-align: center;
+        }
+
+        .tapme-footer a {
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+
+        .tapme-footer a:hover {
+            transform: scale(1.05);
+        }
+
+        .tapme-footer img {
+            width: 140px; /* Tamaño grande y visible */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
 
     <div class="bio-card">
         
-        <!-- Tu foto de perfil principal -->
+        <!-- LOGO DE PACHAK ARRIBA -->
         <div class="profile-container">
             <img src="logo-pachak.jpeg" alt="Logo Pachak">
         </div>
 
-        <!-- LOGO DE TAPME EN GRANDE (Con enlace a WhatsApp) -->
-        <a href="https://api.whatsapp.com/send/?phone=593988725270&text&type=phone_number&app_absent=0" class="tapme-logo-container" target="_blank">
-            <img src="logotapme.png" alt="Logo Tapme">
-        </a>
-
+        <h1>Pachak</h1>
         <p class="subtitle">Saludable, artesanal y natural. Conoce más sobre nosotros.</p>
 
         <div class="links-container">
@@ -167,7 +178,7 @@
             </a>
 
             <!-- Enlace a WhatsApp -->
-            <a href="https://api.whatsapp.com/send/?phone=593988725270&text&type=phone_number&app_absent=0" class="btn-link" target="_blank">
+            <a href="https://wa.me/593983836072>
                 <div class="btn-content">
                     <i class="icon whatsapp-color fa-brands fa-whatsapp" style="color: #25D366;"></i>
                     <span>Escríbenos por WhatsApp</span>
@@ -184,6 +195,13 @@
                 <i class="arrow fa-solid fa-chevron-right"></i>
             </a>
 
+        </div>
+
+        <!-- LOGO DE TAPME GRANDE EN LA PARTE INFERIOR (Con enlace a WhatsApp) -->
+        <div class="tapme-footer">
+            <a href="https://api.whatsapp.com/send/?phone=593988725270&text&type=phone_number&app_absent=0" target="_blank">
+                <img src="logotapme.png" alt="Logo Tapme">
+            </a>
         </div>
 
     </div>
