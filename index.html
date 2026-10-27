@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pachak | Enlaces Oficiales</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -53,13 +53,21 @@
             object-fit: cover;
         }
 
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #2c221e;
-            letter-spacing: 0.5px;
-            margin-bottom: 6px;
+        /* Estilo para el logo de Tapme central */
+        .tapme-logo-container {
+            margin: 10px auto 6px auto;
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+
+        .tapme-logo-container:hover {
+            transform: scale(1.05);
+        }
+
+        .tapme-logo-container img {
+            width: 160px; /* Tamaño más grande y visible */
+            height: auto;
+            display: block;
         }
 
         p.subtitle {
@@ -129,26 +137,22 @@
         .btn-link:hover .instagram-color {
             color: #ffffff !important;
         }
-
-        .footer-text {
-            margin-top: 35px;
-            font-size: 0.75rem;
-            color: #8c7a6e;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
     </style>
 </head>
 <body>
 
     <div class="bio-card">
         
-        <!-- Reemplaza 'logo-pachak.jpg' con el nombre exacto de tu archivo de logo -->
+        <!-- Tu foto de perfil principal -->
         <div class="profile-container">
-            <img src="logo%20pachak.jpeg" alt="Logo Pachak">
+            <img src="logo-pachak.jpeg" alt="Logo Pachak">
         </div>
 
-        <h1>Pachak</h1>
+        <!-- LOGO DE TAPME EN GRANDE (Con enlace a WhatsApp) -->
+        <a href="https://api.whatsapp.com/send/?phone=593988725270&text&type=phone_number&app_absent=0" class="tapme-logo-container" target="_blank">
+            <img src="logotapme.png" alt="Logo Tapme">
+        </a>
+
         <p class="subtitle">Saludable, artesanal y natural. Conoce más sobre nosotros.</p>
 
         <div class="links-container">
@@ -162,8 +166,8 @@
                 <i class="arrow fa-solid fa-chevron-right"></i>
             </a>
 
-            <!-- Enlace a WhatsApp (Cambia los números por los tuyos con código de país, sin espacios ni el signo +) -->
-            <a href="https://wa.me/593999999999" class="btn-link" target="_blank">
+            <!-- Enlace a WhatsApp -->
+            <a href="https://api.whatsapp.com/send/?phone=593988725270&text&type=phone_number&app_absent=0" class="btn-link" target="_blank">
                 <div class="btn-content">
                     <i class="icon whatsapp-color fa-brands fa-whatsapp" style="color: #25D366;"></i>
                     <span>Escríbenos por WhatsApp</span>
@@ -171,7 +175,7 @@
                 <i class="arrow fa-solid fa-chevron-right"></i>
             </a>
 
-            <!-- Enlace a Instagram (Cambia TU_USUARIO por tu cuenta real) -->
+            <!-- Enlace a Instagram -->
             <a href="https://instagram.com/TU_USUARIO" class="btn-link" target="_blank">
                 <div class="btn-content">
                     <i class="icon instagram-color fa-brands fa-instagram" style="color: #E1306C;"></i>
@@ -181,16 +185,6 @@
             </a>
 
         </div>
-
-        <div class="footer-text">
-            <span>© Pachak </span>
-        </div>
-        <!-- LOGO DE TAPME CON ENLACE A WHATSAPP -->
-    <div style="text-align: center; margin-top: 35px;">
-        <a href="https://api.whatsapp.com/send/?phone=593988725270&text&type=phone_number&app_absent=0" target="_blank">
-            <img src="logotapme.png" alt="Logo Tapme" style="width: 120px; height: auto; border-radius: 50%;">
-        </a>
-    </div>
 
     </div>
 
