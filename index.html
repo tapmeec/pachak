@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pachak | Enlaces Oficiales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #b86241;
+            background-image: linear-gradient(135deg, #b86241 0%, #994d31 100%);
+            color: #2c221e;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .bio-card {
+            width: 100%;
+            max-width: 420px;
+            background-color: #fdfaf6;
+            border-radius: 24px;
+            padding: 40px 24px;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .profile-container {
+            width: 110px;
+            height: 110px;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            border: 3px solid #b86241;
+            overflow: hidden;
+            background-color: #b86241;
+            box-shadow: 0 6px 16px rgba(184, 98, 65, 0.3);
+        }
+
+        .profile-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c221e;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        p.subtitle {
+            font-size: 0.92rem;
+            color: #6b5b53;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f4ece4;
+            border: 1px solid #e3d3c4;
+            padding: 15px 20px;
+            border-radius: 14px;
+            color: #2c221e;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-link .btn-content {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .btn-link i.icon {
+            font-size: 1.2rem;
+            width: 24px;
+            text-align: center;
+            color: #b86241;
+        }
+
+        .btn-link i.arrow {
+            font-size: 0.8rem;
+            color: #a18e81;
+            transition: transform 0.2s ease;
+        }
+
+        .btn-link:hover {
+            background-color: #b86241;
+            color: #ffffff;
+            border-color: #b86241;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(184, 98, 65, 0.25);
+        }
+
+        .btn-link:hover i.icon,
+        .btn-link:hover i.arrow {
+            color: #ffffff;
+        }
+
+        .btn-link:hover .whatsapp-color {
+            color: #ffffff !important;
+        }
+
+        .btn-link:hover .instagram-color {
+            color: #ffffff !important;
+        }
+
+        .footer-text {
+            margin-top: 35px;
+            font-size: 0.75rem;
+            color: #8c7a6e;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bio-card">
+        
+        <!-- Reemplaza 'logo-pachak.jpg' con el nombre exacto de tu archivo de logo -->
+        <div class="profile-container">
+            <img src="logo-pachak.jpg" alt="Logo Pachak">
+        </div>
+
+        <h1>Pachak</h1>
+        <p class="subtitle">Saludable, artesanal y natural. Conoce más sobre nosotros.</p>
+
+        <div class="links-container">
+
+            <!-- Enlace a la Página Web -->
+            <a href="https://ruizbrandon433.wixsite.com/pachak" class="btn-link" target="_blank">
+                <div class="btn-content">
+                    <i class="icon fa-solid fa-globe"></i>
+                    <span>Sitio Web Oficial</span>
+                </div>
+                <i class="arrow fa-solid fa-chevron-right"></i>
+            </a>
+
+            <!-- Enlace a WhatsApp (Cambia los números por los tuyos con código de país, sin espacios ni el signo +) -->
+            <a href="https://wa.me/593999999999" class="btn-link" target="_blank">
+                <div class="btn-content">
+                    <i class="icon whatsapp-color fa-brands fa-whatsapp" style="color: #25D366;"></i>
+                    <span>Escríbenos por WhatsApp</span>
+                </div>
+                <i class="arrow fa-solid fa-chevron-right"></i>
+            </a>
+
+            <!-- Enlace a Instagram (Cambia TU_USUARIO por tu cuenta real) -->
+            <a href="https://instagram.com/TU_USUARIO" class="btn-link" target="_blank">
+                <div class="btn-content">
+                    <i class="icon instagram-color fa-brands fa-instagram" style="color: #E1306C;"></i>
+                    <span>Síguenos en Instagram</span>
+                </div>
+                <i class="arrow fa-solid fa-chevron-right"></i>
+            </a>
+
+        </div>
+
+        <div class="footer-text">
+            <span>© Pachak • Todos los derechos reservados</span>
+        </div>
+
+    </div>
+
+</body>
+</html>
